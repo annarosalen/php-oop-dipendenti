@@ -20,7 +20,7 @@
                     private $lastname;
                     private $dateofbirth;
 
-                    public function __constructor($name, $lastname, $dateofbirth){
+                    public function __construct($name, $lastname, $dateofbirth){
                         
                         $this -> setName($name);
                         $this -> setLastname($lastname);
@@ -79,9 +79,9 @@
                     public $position;
                     public $department;
 
-                    public function __constructor($name, $lastname, $dateofbirth, $position, $department){
+                    public function __construct($name, $lastname, $dateofbirth, $position, $department){
 
-                        parent:: __constructor($name, $lastname, $dateofbirth);
+                        parent:: __construct($name, $lastname, $dateofbirth);
 
                         $this -> position = $position;
                         $this -> department = $department;
@@ -103,9 +103,9 @@
                     public $sharing;
                     public $location;
 
-                    public function __constructor($name, $lastname, $dateofbirth, $sharing, $location){
+                    public function __construct($name, $lastname, $dateofbirth, $sharing, $location){
 
-                        parent:: __constructor($name, $lastname, $dateofbirth);
+                        parent:: __construct($name, $lastname, $dateofbirth);
 
                         $this -> sharing = $sharing;
                         $this -> location = $location;
