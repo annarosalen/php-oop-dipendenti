@@ -101,14 +101,14 @@
                 class Boss extends Person {
 
                     public $sharing;
-                    public $location;
+                    public $headoffice;
 
-                    public function __construct($name, $lastname, $dateofbirth, $sharing, $location){
+                    public function __construct($name, $lastname, $dateofbirth, $sharing, $headoffice){
 
                         parent:: __construct($name, $lastname, $dateofbirth);
 
                         $this -> sharing = $sharing;
-                        $this -> location = $location;
+                        $this -> headoffice = $headoffice;
 
                     }
 
@@ -116,7 +116,7 @@
 
                         return parent::__toString() . '<br>'
                             . 'sharing: ' . $this -> sharing . '<br>'
-                            . 'location: ' . $this -> location;
+                            . 'headoffice: ' . $this -> headoffice;
 
                     }
 
@@ -137,6 +137,7 @@
         
         
         </h1>
+
     
     </div>
 </body>
